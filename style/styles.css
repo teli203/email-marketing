@@ -13,3 +13,38 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.365);
 }
+
+h2 {
+    color: #333;
+}
+
+.a-button,
+.b-button,
+.c-button,
+.d-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.a-button{
+    background: #c669af;
+    color: #ffffff;
+}
+
+.b-button {
+    background: #007BFF;
+    color: #ffffff;
+}
+
+.c-button {
+    background: #2e2d2d;;
+    color: #fbfafa;
+}
+
+.d-button {
+    background: #1e4d01;
+    color: #ffffff;
+}
