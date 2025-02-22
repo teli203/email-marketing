@@ -1,3 +1,15 @@
 body {
-    background: blue; /* Test color */
+    background: rgb(60, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.email-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.365);
 }
