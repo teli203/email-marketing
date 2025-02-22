@@ -1,0 +1,65 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Function to show a modal with a copy button
+    function showModal(discountCode) {
+        let modal = document.createElement("div");
+        modal.style.position = "fixed";
+        modal.style.top = "50%";
+        modal.style.left = "50%";
+        modal.style.transform = "translate(-50%, -50%)";
+        modal.style.background = "#fff";
+        modal.style.padding = "20px";
+        modal.style.borderRadius = "10px";
+        modal.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+        modal.style.textAlign = "center";
+        modal.style.zIndex = "1000";
+
+        let message = document.createElement("p");
+        message.textContent = `Discount Code: ${discountCode}`;
+        modal.appendChild(message);
+
+        let copyButton = document.createElement("button");
+        copyButton.innerHTML = "&#x2398; Copy";
+        copyButton.style.marginTop = "10px";
+        copyButton.style.padding = "8px 12px";
+        copyButton.style.background = "#007BFF";
+        copyButton.style.color = "#fff";
+        copyButton.style.border = "none";
+        copyButton.style.borderRadius = "5px";
+        copyButton.style.cursor = "pointer";
+
+        copyButton.addEventListener("click", () => {
+            navigator.clipboard.writeText(discountCode).then(() => {
+                copyButton.textContent = "Copied!";
+                setTimeout(() => {
+                    document.body.removeChild(modal);
+                }, 2000);
+            }).catch(() => {
+                alert("Failed to copy the discount code. Please try again.");
+            });
+        });
+
+        modal.appendChild(copyButton);
+        document.body.appendChild(modal);
+    }
+
+    // Handle discount button click
+    document.querySelector(".a-button").addEventListener("click", () => {
+        const discountCode = "XYZLMNOP";
+        showModal(discountCode);
+    });
+
+    // Handle newsletter button click
+    document.querySelector(".b-button").addEventListener("click", () => {
+        window.location.href = "/pages/news-letter.html";
+    });
+
+    // Handle RSVP button click
+    document.querySelector(".c-button").addEventListener("click", () => {
+        window.location.href = "/pages/rsvp.html";
+    });
+
+    // Handle survey button click
+    document.querySelector(".d-button").addEventListener("click", () => {
+        window.location.href = "/pages/survey.html";
+    });
+});
