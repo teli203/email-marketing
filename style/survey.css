@@ -1,3 +1,84 @@
+#survey-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
 body {
-    background: yellow;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/laptop-5474366_1280.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+.survey-container{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;                      
+    max-width: 95%;
+    background-color: rgba(255, 255, 255, 0.691);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 6px 1px rgb(0, 0, 0);
+}
+
+#question-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#question {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-group {
+    width: fit-content;
+}
+
+.btn {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: .7rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+input,
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(191, 146, 87);
+    border: 2px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+#result {
+    margin: 2rem auto;
+}
+
+#question, #result {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
