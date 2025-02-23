@@ -1,6 +1,6 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background: #fff;
+    background-image: url('/assets/bkgrd1.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .rsvp-container {
-    background: rgba(223, 204, 159, 0.436);
+    background: rgba(54, 38, 1, 0.436);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    color: #1a3701;
+    color: #132900;
 }
 
 form {
@@ -27,6 +27,8 @@ form {
 }
 
 label {
+    font-size: 18px;
+    color: rgba(9, 23, 0, 0.853);
     display: flex;
     margin-top: 10px;
     font-weight: bold;
@@ -35,7 +37,7 @@ label {
 input {
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #1a370184;
+    border: 1px solid rgb(86, 55, 1);
     border-radius: 5px;
 }
 
@@ -51,5 +53,5 @@ button {
 }
 
 button:hover {
-    background: #3fb300;
+    background: #226200;
 }
