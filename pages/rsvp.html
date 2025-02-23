@@ -8,6 +8,23 @@
     <script src="/js/rsvp.js" defer></script>
 </head>
 <body>
-    <h1>RSVP</h1>
+    <div class="rsvp-container">
+        <h1>RSVP for Our Event</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+            
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </div>
 </body>
 </html>
