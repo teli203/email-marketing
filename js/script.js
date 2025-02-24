@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Function to show a modal with a copy button
+    // Function to show a modal with a copy button and close functionality
     function showModal(discountCode) {
         let modal = document.createElement("div");
         modal.style.position = "fixed";
@@ -12,9 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
         modal.style.textAlign = "center";
         modal.style.zIndex = "1000";
+        modal.style.position = "fixed";
+        modal.style.width = "auto";
+        modal.style.maxWidth = "300px";
+    // X Close Module function & style
+        let closeButton = document.createElement("button");
+        closeButton.innerHTML = "&times;";
+        closeButton.style.position = "absolute";
+        closeButton.style.top = "10px";
+        closeButton.style.right = "10px";
+        closeButton.style.background = "transparent";
+        closeButton.style.border = "none";
+        closeButton.style.fontSize = "18px";
+        closeButton.style.cursor = "pointer";
+        closeButton.addEventListener("click", () => {
+            document.body.removeChild(modal);
+        });
 
         let message = document.createElement("p");
         message.textContent = `Discount Code: ${discountCode}`;
+        modal.appendChild(closeButton); 
         modal.appendChild(message);
 
         let copyButton = document.createElement("button");
@@ -40,6 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         modal.appendChild(copyButton);
         document.body.appendChild(modal);
+
+        // Close modal when clicking outside of the modal
+        setTimeout(() => {
+            document.addEventListener("click", (event) => {
+                if (!modal.contains(event.target) && !event.target.classList.contains("a-button")) {
+                    document.body.removeChild(modal);
+                }
+            }, { once: true });
+        }, 0);
     }
 
     // Handle discount button click
