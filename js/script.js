@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.top = "50%";
         modal.style.left = "50%";
         modal.style.transform = "translate(-50%, -50%)";
-        modal.style.background = "#fff";
+        modal.style.background = "#e5e5e5";
         modal.style.padding = "20px";
         modal.style.borderRadius = "10px";
-        modal.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+        modal.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.9)";
         modal.style.textAlign = "center";
         modal.style.zIndex = "1000";
         modal.style.position = "fixed";
@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
         copyButton.innerHTML = "&#x2398; Copy";
         copyButton.style.marginTop = "10px";
         copyButton.style.padding = "8px 12px";
-        copyButton.style.background = "#007BFF";
+        copyButton.style.background = "#191919";
         copyButton.style.color = "#fff";
         copyButton.style.border = "none";
         copyButton.style.borderRadius = "5px";
         copyButton.style.cursor = "pointer";
-
+    
         copyButton.addEventListener("click", () => {
             navigator.clipboard.writeText(discountCode).then(() => {
                 copyButton.textContent = "Copied!";
