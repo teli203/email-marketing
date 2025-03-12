@@ -20,3 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.appendChild(message);
     });
 });
+
+document.getElementById("homeButton").addEventListener("click", function() {
+    window.location.href = "../index.html"; 
+});
