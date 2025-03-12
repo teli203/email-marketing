@@ -70,6 +70,15 @@ input,
     border: 2px solid black;
 }
 
+#backHome {
+    background: rgba(0, 0, 0, 0.856);
+    color: whitesmoke;
+    margin: 1rem;
+    padding: .7rem;
+    border: 2.5px solid rgb(182, 158, 128);
+    border-radius: 6.7px;
+}
+
 .hide {
     display: none;
 }
