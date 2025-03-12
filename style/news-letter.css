@@ -35,6 +35,15 @@ h3 {
    text-align: center;
 }
 
+#backButton {
+    background: rgba(50, 27, 1, 0.758);
+    color: rgb(225, 208, 186);
+    max-width: 20vw;
+    padding: .5rem;
+    border: 1.5px solid rgba(245, 245, 245, 0.659);
+    border-radius: 4px;
+}
+
 
 
 
