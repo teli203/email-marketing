@@ -98,3 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
     answerButtons.style.gap = "1rem";
     answerButtons.style.margin = "3rem";
 });
+
+// Back Home Btn
+document.getElementById("backHome").addEventListener("click", function() {
+    window.location.href = "../index.html"; 
+});
