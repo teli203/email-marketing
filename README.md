@@ -1,4 +1,4 @@
-# Business Marketing Emails
+## Business Marketing Emails
 
 This project showcases a collection of professionally designed business marketing emails, including promotional offers, newsletters, event invitations, and surveys.
 
