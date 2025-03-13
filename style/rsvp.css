@@ -1,18 +1,26 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     background-image: url('/assets/bkgrd1.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    margin: 1rem;
 }
 
 .rsvp-container {
+    flex: 1; /* Pushes the footer to the bottom with line 2 of code for column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: rgba(54, 38, 1, 0.436);
     padding: 20px;
+    border: 10px solid #132900c4;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 6px 8px 10px rgb(54, 38, 1);
     width: 300px;
     text-align: center;
 }
@@ -54,4 +62,18 @@ button {
 
 button:hover {
     background: #226200;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f8f8f890; 
+    width: 100%;
+    position: relative;
+    border: 12px solid #132900d9;
+}
+
+#tw {
+    color: rgb(48, 26, 1);
 }
