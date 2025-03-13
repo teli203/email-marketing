@@ -1,5 +1,7 @@
 ## Business Marketing Emails
 
+⭐️ [Email Marketing](https://email-marketing-snowy.vercel.app/) ⭐️
+
 This project showcases a collection of professionally designed business marketing emails, including promotional offers, newsletters, event invitations, and surveys.
 
 ## 📌 Features
