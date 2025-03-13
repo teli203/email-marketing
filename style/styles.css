@@ -57,6 +57,10 @@ h2 {
     color: #666;
 }
 
+#tw {
+    color: whitesmoke;
+}
+
 @media (max-width: 600px) {
     .email-container{
         width: fit-content;
