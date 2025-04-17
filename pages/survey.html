@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="/style/survey.css">
-    <link rel="icon" href="/assets/favicon.ico">
-    <script src="/js/survey.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="/style/survey.css"/>
+  <link rel="icon" href="/assets/favicon.ico"/>
+  <script src="/js/survey.js" defer></script>
 </head>
 <body>
-    <div class="survey-container">
-        <h2 id="survey-title">Survey</h2>
-        <div id="question-container">
-            <h3 id="question">Question</h3>
-            <div id="answer-buttons"></div>
-        </div> 
-    <button id="next-btn" class="btn hide">Next</button>
-    <div id="result" class="hide"></div>
-    <button id="restart-btn" class="btn hide">Restart</button>
-    <div>
-        <button id="backHome">Back</button>
-    </div>
+    <main class="survey-wrapper">
+        <header>
+          <h2 id="survey-title">Survey</h2>
+        </header>
+    
+        <section id="survey-content">
+          <h3 id="question">Question</h3>
+          <div id="answer-buttons" class="answer-group"></div>
+        </section>
+    
+        <div id="result" class="hide" tabindex="-1"></div>
+    
+        <nav class="survey-controls">
+          <button id="restart-btn" class="btn hide">Restart</button>
+        </nav>
+    
+        <footer>
+          <button id="backHome" class="back-button">Back</button>
+          <p id="tw_cr">&copy; 2025 Telicia Watson. All rights reserved.</p>
+        </footer>
+      </main>   
 </body>
 </html>
