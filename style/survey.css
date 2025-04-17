@@ -61,7 +61,7 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    min-width: 100px;
+    width: 100%;
     text-align: center;
   }
   
@@ -97,4 +97,14 @@ body {
   .hide {
     display: none;
   }
-  
+
+  /* Media Query */
+
+  @media (max-width: 600px) {
+    .survey-wrapper {
+      width: 20rem;
+      width: 75%;
+    }
+
+  }
+    
