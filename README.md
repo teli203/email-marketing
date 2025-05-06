@@ -1,8 +1,11 @@
+<div align="center">
+   
 ## Business Marketing Emails
 
 ⭐️ [Email Marketing](https://email-marketing-snowy.vercel.app/) ⭐️
 
 This project showcases a collection of professionally designed business marketing emails, including promotional offers, newsletters, event invitations, and surveys.
+</div>
 
 ## 📌 Features
 
@@ -11,6 +14,8 @@ This project showcases a collection of professionally designed business marketin
 - **Event Invitations** – Professionally designed invitations for exclusive events.
 - **Customer Surveys** – Collect feedback and reward participants.
 
+<div align="center">
+   
 ## 📸 Screenshots
 
 ### Promotional Offer
@@ -26,7 +31,7 @@ This project showcases a collection of professionally designed business marketin
 
 To explore and modify the project:
 
-1. Clone the repository:  
+Clone the repository:  
    ```sh
    git clone https://github.com/your-username/your-repo.git
-
+</div>
