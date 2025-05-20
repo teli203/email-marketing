@@ -34,4 +34,3 @@ To explore and modify the project:
 Clone the repository:  
    ```sh
    git clone https://github.com/your-username/your-repo.git
-</div>
